@@ -1,0 +1,32 @@
+{
+  "image_dataset": "dataset/nike/nike_positives",
+  "image_annotations": "dataset/nike/nike_annotations",
+  "image_distractions": "dataset/nike/nike_negatives",
+
+  "features_path": "output/nike_features.hdf5",
+  "classifier_path": "output/nike_model.cpickle",
+
+  "percent_gt_images": 1.0,
+  "offset": 5,
+  "use_flip": true,
+  "num_distraction_images": 500,
+  "num_distractions_per_image": 10,
+
+  "orientations": 9,
+  "pixels_per_cell": [4, 4],
+  "cells_per_block": [2, 2],
+  "normalize": true,
+
+  "window_step": 4,
+  "overlap_thresh": 0.3,
+  "pyramid_scale": 1.5,
+  "window_dim": [96, 48],
+  "min_probability": 0.5,
+  "C": 0.01,
+
+  "hn_num_distraction_images": 20,
+  "hn_window_step": 8,
+  "hn_pyramid_scale": 1.5,
+  "hn_min_probability": 0.6
+}
+

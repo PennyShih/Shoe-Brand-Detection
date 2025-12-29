@@ -1,0 +1,31 @@
+{
+  "image_dataset": "dataset/adidas/adidas_positives",
+  "image_annotations": "dataset/adidas/adidas_annotations",
+  "image_distractions": "dataset/adidas/adidas_negatives",
+
+  "features_path": "output/adidas_features.hdf5",
+  "classifier_path": "output/adidas_model.cpickle",
+
+  "percent_gt_images": 1.0,
+  "offset": 5,
+  "use_flip": true,
+  "num_distraction_images": 500,
+  "num_distractions_per_image": 10,
+
+  "orientations": 9,
+  "pixels_per_cell": [4, 4],
+  "cells_per_block": [2, 2],
+  "normalize": true,
+
+  "window_step": 4,
+  "overlap_thresh": 0.3,
+  "pyramid_scale": 1.5,
+  "window_dim": [64, 64],
+  "min_probability": 0.3,
+  "C": 0.01,
+
+  "hn_num_distraction_images": 50,
+  "hn_window_step": 4,
+  "hn_pyramid_scale": 1.5,
+  "hn_min_probability": 0.51
+}
